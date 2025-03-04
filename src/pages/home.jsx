@@ -7,6 +7,8 @@ import Header from "../components/header.jsx";
 
 import button from "../assets/button.png";
 
+import FloatingButton from "../components/FloatingButton.jsx";
+
 // ✅ CryptoTicker Component
 const CryptoTicker = () => {
   const [priceData, setPriceData] = useState({ current: null, previous: null });
@@ -306,6 +308,7 @@ const Home = () => {
         <ReviewCards />
       </section>
       <Footer />
+      <FloatingButton/>
     </div>
   );
 };

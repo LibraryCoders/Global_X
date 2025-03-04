@@ -2,6 +2,7 @@
 import React from "react";
 import Footer from "../components/footer.jsx";
 import Header from "../components/header.jsx";
+import FloatingButton from "../components/FloatingButton.jsx";
 
 
 import "../style/info.css"; // Import styles
@@ -34,6 +35,7 @@ const CryptoExchange = () => {
       </p>
     </div>
     <Footer/>
+    <FloatingButton/>
 
     </div>
   );

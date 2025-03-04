@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import CryptoTicker from '../components/btc_rate';
 import image from "../assets/Group 146.png";
 import image1 from "../assets/Group 7.png";
+import FloatingButton from '../components/FloatingButton';
+
 
 const ExchangeForm = () => {
 
@@ -110,6 +112,7 @@ const ExchangeForm = () => {
       </div>
       <CryptoTicker />
       <Footer />
+      <FloatingButton/>
     </div>
   );
 };

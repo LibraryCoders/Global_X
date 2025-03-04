@@ -2,6 +2,7 @@ import React from "react";
 import "../style/privacy.css"; // Import styles
 import Header from "../components/header.jsx";
 import Footer from "../components/footer.jsx";
+import FloatingButton from "../components/FloatingButton.jsx";
 
 
 const ImportantInfo = () => {
@@ -39,6 +40,7 @@ const ImportantInfo = () => {
       <button className="confirm-button">Я ознакомлен</button>
     </div>
     <Footer/>
+    <FloatingButton/>
 
     </div>
 
