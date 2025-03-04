@@ -1,7 +1,7 @@
 
 import "../style/App.css";
 import React,{useEffect} from "react";
-import { BrowserRouter as Router, Routes, Route,useLocation} from "react-router-dom";
+import { Routes, Route,useLocation, HashRouter} from "react-router-dom";
 import CryptoExchange  from "./info.jsx";
 import Home from "./home.jsx";
 import ImportantInfo from "./privacy.jsx";
@@ -18,13 +18,13 @@ const ScrollToTop = () => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-  return null;
+  return null;
 };
 
 
 const App = () => {
   return (
-    <Router>
+    <HashRouter>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home/>} />
@@ -33,7 +33,7 @@ const App = () => {
         <Route path="/exchange" element={<ExchangeForm/>} />
       </Routes>
       
-    </Router>
+    </HashRouter>
   );
 };
 
